@@ -1,0 +1,375 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(7, 86, 131);
+    border-bottom: 1px solid rgb(7, 86, 131);
+}
+
+button {
+    padding: .6rem;
+    width: 9rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+button:hover {
+    color: rgb(7, 86, 131);
+    border: 1px solid rgb(7, 86, 131);
+}
+
+/* fixed-button */
+#fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    z-index: 200;
+}
+
+#fixed:hover {
+    color: rgb(7, 86, 131);
+}
+
+/* fixed-button */
+
+/* nav-bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 30px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left .navbar-name {
+    font-size: 1.5rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: .8rem;
+}
+
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* nav-bar */
+
+/* home-block */
+#homediv {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/img1.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 210px 100px 0px 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#home h1 {
+    font-size: 3.8rem;
+    font-weight: 500;
+    margin-bottom: -.4rem;
+}
+
+#home h2 {
+    font-size: 4.6rem;
+    margin-bottom: -.4rem;
+    transition: all .3s;
+    display: inline;
+}
+
+#home p {
+    font-size: 1rem;
+    word-spacing: .2rem;
+    letter-spacing: .4rem;
+    margin-bottom: 3rem;
+}
+
+#homeicon {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+.homeicons {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.homeicons:hover {
+    color: rgb(7, 86, 131);
+    border: 1px solid rgb(7, 86, 131);
+}
+
+/* home-block */
+
+/* About-Block */
+#aboutdiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/Background.webp');
+    background-position: right;
+    background-size: cover;
+    position: relative;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 100px;
+}
+
+#aboutcontaint {
+    width: 50%;
+}
+
+#aboutcontaint h5 {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#aboutcontaint p {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: justify; 
+}
+
+#a-address {
+    position: absolute;
+    bottom: 40px;
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* About-Block */
+
+/* Resume-Block */
+#Resumediv {
+    width: 100%;
+    height: auto;
+    background-image: url('../img/img6.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Resume {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.932);
+    padding: 70px 60px 10px 60px;
+}
+
+#Resume h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.resume-data {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+
+#resumeleft {
+    width: 40%;
+}
+
+#resumemiddle {
+    width: 40%;
+}
+
+#resumeright {
+    width: 20%;
+
+}
+
+.Skill {
+    margin-bottom: 3rem;
+    padding-left: 1%;
+}
+
+.Skill h3 {
+    margin-bottom: 2em;
+    border-bottom: 3px solid rgb(7, 86, 131);
+    display: inline-block;
+    padding-bottom: 2px;
+
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 7em;
+    margin-bottom: 1em;
+    font-size: .8rem;
+}
+
+.experience {
+    display: flex;
+}
+
+.e-date {
+    min-width: 50px;
+    min-height: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(7, 86, 131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    margin-right: 3em;
+}
+
+.V-line {
+    min-height: 20px;
+    width: 3px;
+    background-color: white;
+    margin: 3px 25px;
+}
+
+
+
+.education {
+    margin-bottom: 1.2em;
+}
+
+.hobbidiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#hobbiedata{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.h-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 8px;
+}
+
+/* Resume-block */
+
+/* Project-Block */
+
+#projectdiv{
+    height: auto;
+    width: 100%;
+    background-image: url('../img/img2.webp');
+    background-position: center;
+    background-size: cover;
+}
+#project{
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+    padding: 60px;
+}
+#project h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* footer-block */
+#fotterdiv{
+    width: 100%;
+    height: auto;
+    background-image: url('../img/img5.webp');
+    background-position: center;
+    background-size: cover;
+}
+#fotter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding:70px 5% 20px 5%;
+}
+#fotter h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.fottericons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#fotter p{
+    text-align: center;
+    font-size: .8rem;
+}
+/* footer-block */

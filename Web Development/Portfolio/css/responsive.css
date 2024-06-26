@@ -1,0 +1,150 @@
+@media screen and (max-width:1300px){  
+    .resume-data {
+        flex-direction: column;
+    }
+    #resumeleft,#resumemiddle,#resumeright {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }  
+}
+@media screen and (max-width:960px){
+    #resumeleft,#resumemiddle,#resumeright {
+        flex-direction: column;
+    }
+    .line-container {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .navbar {
+        padding: 0 20px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.401);
+    }
+
+    .navbar-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.757);
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .navbar-right a {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-right a:hover {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(7, 86, 131);
+        border-bottom: 0px solid rgb(7, 86, 131);
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    /* .navbar p {
+        display: none;
+    } */
+
+    /* about-block */
+    #aboutcontaint {
+        width: 100%;
+    }
+
+    #project{
+        padding: 60px 5%;
+    }
+}
+@media screen and (max-width:600px){
+    .company h2{
+        font-size: 1.2rem;
+    }
+    #Resume {
+        padding: 70px 5% 10px 5%;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    /* home-block */
+    #homediv {
+        height: auto;
+    }
+
+    #home {
+        height: 100%;
+        padding: 20vh 5% 0px 5%;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home h2 {
+        font-size: 3.5rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+        word-spacing: .2rem;
+        letter-spacing: .12rem;
+        margin-bottom: 3rem;
+    }
+
+    button {
+        margin-bottom: 1rem;
+    }
+
+    #homeicon {
+        width: 100%;
+        justify-content: center;
+        position: unset;
+        margin-bottom: 2rem;
+        margin-top: 10rem;
+    }
+    /* home-block */
+
+    /* about-block */
+    #aboutdiv {
+        height: auto;
+    }
+    
+    #about {
+        height: 100%;
+        padding: 10%;
+    }
+    #aboutcontaint p {
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-align: justify;
+    }
+    
+    #a-address {
+        position: unset;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media (min-width: 850px) and (min-height: 1000px) and (orientation : portrait) {
+    #homediv {
+        height: auto;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="about"></div>
+            <div id="nav"></div>
+            <div id="input-box">
+                <input type="text" id="screen" placeholder="0">
+            </div>
+            <div id="row1" class="rrow">
+                <button class="rec-box" onclick="fact()">x!</button>
+                <button class="rec-box btn">(</button>
+                <button class="rec-box btn">)</button>
+                <button class="rec-box" onclick="pi()">&#8508;</button>
+            </div>
+            <div id="row2" class="rrow">
+                <button class="rec-box" onclick="sin()">sin</button>
+                <button class="rec-box" onclick="cos()">cos</button>
+                <button class="rec-box" onclick="tan()">tan</button>
+                <button class="rec-box" onclick="log()">log</button>
+            </div>
+            <div class="crow">
+                <button class="cir-box cir-box-blue" onclick="pow()">x<sup>2</sup></button>
+                <button class="cir-box cir-box-blue" onclick="sqrt()">&#8730;</button>
+                <button class="cir-box btn cir-box-blue">^</button>
+                <button class="cir-box cir-box-blue" onclick="backspace()">CE</button>
+                <button class="cir-box cir-box-blue" onclick="clearScreen()">Clear</button>
+            </div>
+            <div class="crow">
+                <button class="cir-box btn">7</button>
+                <button class="cir-box btn">8</button>
+                <button class="cir-box btn">9</button>
+                <button class="cir-box btn">/</button>
+                <button class="cir-box btn cir-box-blue">*</button>
+            </div>
+            <div class="crow">
+                <button class="cir-box btn">4</button>
+                <button class="cir-box btn">5</button>
+                <button class="cir-box btn">6</button>
+                <button class="cir-box btn">%</button>
+                <button class="cir-box btn cir-box-blue">-</button>
+            </div>
+            <div class="crow">
+                <button class="cir-box btn">1</button>
+                <button class="cir-box btn">2</button>
+                <button class="cir-box btn">3</button>
+                <button class="cir-box" onclick="e()">e</button>
+                <button class="cir-box btn cir-box-blue">+</button>
+            </div>
+            <div class="crow">
+                <button class="cir-box btn">0</button>
+                <button class="cir-box btn">.</button>
+                <button class="cir-box" onclick="degree()">Deg</button>
+                <button class="cir-box" onclick="radian()">Rad</button>
+                <button class="cir-box cir-box-blue" onclick="evaluateExpression()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
